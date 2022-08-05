@@ -30,37 +30,42 @@
                                 <div class="footer-widget__column footer-widget__company">
                                     <h2 class="footer-widget__title">Company</h2>
                                     <ul class="footer-widget__company-list">
-                                        <li class="footer-widget__company-list-item"><a
-                                                    href="about.html">About</a></li>
-                                        <li class="footer-widget__company-list-item"><a href="team.html">Meet
-                                                our team</a></li>
-                                        <li class="footer-widget__company-list-item"><a href="case.html">Case
-                                                stories</a></li>
-                                        <li class="footer-widget__company-list-item"><a href="blog.html">Latest
-                                                news</a></li>
-                                        <li class="footer-widget__company-list-item"><a
-                                                    href="contact.html">Contact</a></li>
+                                        <li class="footer-widget__company-list-item">
+                                            <?php if (!empty($menular)):?>
+                                                <?php foreach ($menular as $menu):?>
+                                                    <a href="<?=$menu->link?>"><?=$menu["name_".Yii::$app->language];?></a>
+                                                <?php endforeach;?>
+                                            <?php endif;?>
+                                        </li>
+<!--                                        <li class="footer-widget__company-list-item"><a href="team.html">Meet-->
+<!--                                                our team</a></li>-->
+<!--                                        <li class="footer-widget__company-list-item"><a href="case.html">Case-->
+<!--                                                stories</a></li>-->
+<!--                                        <li class="footer-widget__company-list-item"><a href="blog.html">Latest-->
+<!--                                                news</a></li>-->
+<!--                                        <li class="footer-widget__company-list-item"><a-->
+<!--                                                    href="contact.html">Contact</a></li>-->
                                     </ul>
                                 </div>
                             </div>
                             <!--End Footer Widget Column-->
 
                             <!--Start Footer Widget Column-->
-                            <div class="col-xl-3 col-lg-2 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
-                                <div class="footer-widget__column footer-widget__link">
-                                    <h2 class="footer-widget__title">More Link</h2>
-                                    <ul class="footer-widget__link-list">
-                                        <li class="footer-widget__link-list-item"><a href="faq.html">Faq</a>
-                                        </li>
-                                        <li class="footer-widget__link-list-item"><a href="faq.html">Tearm of
-                                                user</a></li>
-                                        <li class="footer-widget__link-list-item"><a
-                                                    href="faq.html">Disclaimer</a></li>
-                                        <li class="footer-widget__link-list-item"><a href="about.html">Privacy
-                                                Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+<!--                            <div class="col-xl-3 col-lg-2 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">-->
+<!--                                <div class="footer-widget__column footer-widget__link">-->
+<!--                                    <h2 class="footer-widget__title">More Link</h2>-->
+<!--                                    <ul class="footer-widget__link-list">-->
+<!--                                        <li class="footer-widget__link-list-item"><a href="faq.html">Faq</a>-->
+<!--                                        </li>-->
+<!--                                        <li class="footer-widget__link-list-item"><a href="faq.html">Tearm of-->
+<!--                                                user</a></li>-->
+<!--                                        <li class="footer-widget__link-list-item"><a-->
+<!--                                                    href="faq.html">Disclaimer</a></li>-->
+<!--                                        <li class="footer-widget__link-list-item"><a href="about.html">Privacy-->
+<!--                                                Policy</a></li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <!--End Footer Widget Column-->
 
 
