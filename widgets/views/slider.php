@@ -145,3 +145,55 @@
 </section>
 <!--Main Slider End-->
 
+<<<<<<< HEAD
+=======
+
+<!--Start Company Logos Two-->
+<section class="company-logos-one company-logos-one--two">
+    <div class="container">
+        <div class="title text-center">
+            <h5>Join the <span class="odometer" data-count="1000">00</span><span class="plus">+</span> Company
+                Trusting amozo </h5>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="company-logos-one__wrapper">
+                    <div class="company-logos-one__carousel owl-carousel owl-theme">
+
+                        <!--Start Single Company Logos One-->
+                        <div class="company-logos-one__single">
+                            <img src="images/brand/brand-logo1.png" alt="" />
+                        </div>
+                        <!--End Single Company Logos One-->
+
+                        <!--Start Single Company Logos One-->
+                        <div class="company-logos-one__single">
+                            <img src="images/brand/brand-logo2.png" alt="" />
+                        </div>
+                        <!--End Single Company Logos One-->
+
+                        <!--Start Single Company Logos One-->
+                        <div class="company-logos-one__single">
+                            <img src="images/brand/brand-logo3.png" alt="" />
+                        </div>
+                        <!--End Single Company Logos One-->
+
+                        <!--Start Single Company Logos One-->
+                        <div class="company-logos-one__single">
+                            <img src="images/brand/brand-logo4.png" alt="" />
+                        </div>
+                        <!--End Single Company Logos One-->
+
+                        <!--Start Single Company Logos One-->
+                        <div class="company-logos-one__single">
+                            <img src="images/brand/brand-logo5.png" alt="" />
+                        </div>
+                        <!--End Single Company Logos One-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Company Logos Two-->
+>>>>>>> origin/master
