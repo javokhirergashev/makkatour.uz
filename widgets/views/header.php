@@ -1,57 +1,97 @@
-<header>
-    <nav class="navbar top-space navbar-expand-lg navbar-boxed navbar-dark bg-extra-dark-gray header-dark fixed-top responsive-sticky">
-        <div class="container-fluid nav-header-container">
-            <!-- start logo -->
-            <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="" class="default-logo">
-                    <img src="images/logo-white.png" data-at2x="images/logo-black@2x.png" alt="" class="alt-logo">
-                    <img src="images/logo-white.png" data-at2x="images/logo-black@2x.png" alt="" class="mobile-logo">
-                </a>
-            </div>
-            <div class="col-auto col-lg-8 menu-order px-lg-0">
-                <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                </button>
+<header class="main-header main-header--one main-header--one--two  clearfix">
+    <div class="main-header--one__wrapper">
+        <div class="auto-container">
+            <div class="main-header--one__inner">
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-
-
-                            <ul class="navbar-nav alt-font">
-                                <?php if (!empty($models)): ?>
-
-                                    <?php foreach ($models as $model): ?>
-                                        <li class="nav-item dropdown simple-dropdown">
-                                            <a href="<?=$model->link?>" class="nav-link"><?=$model['name_'.Yii::$app->language];?></a>
-                                        </li>
-                                    <?php endforeach; ?>
-                                <?php endif; ?>
-                            </ul>
-
-
+                <div class="main-header--one__left">
+                    <div class="logo">
+                        <a href="index-2.html"><img src="images/resources/logo-2.png" alt="" /></a>
+                    </div>
                 </div>
-            </div>
-            <div class="header-language dropdown d-lg-inline-block">
-                <a href="javascript:void(0);"><i class="feather icon-feather-globe"></i></a>
-                <ul class="dropdown-menu alt-font">
-                    <?php
-                        foreach (Yii::$app->params['language'] as $key => $value){
-                            echo "<li><a href='".\yii\helpers\Url::to(['site/ozgar',"til"=>$key])."'>".$value."</a></li>";
-                        }
-                    ?>
 
-<!--                    <li><a href="javascript:void(0);" title="England"><span class="icon-country"><img src="images/country-flag-16X16/england.png" alt="" data-no-retina=""></span>English</a></li>-->
-<!--                    <li><a href="javascript:void(0);" title="Russian"><span class="icon-country"><img src="images/country-flag-16X16/russian.png" alt="" data-no-retina=""></span>Russian</a></li>-->
-                </ul>
-            </div>
-            <div class="header-cart-icon ">
-                <a href="<?=\yii\helpers\Url::to(['admin/'])?>"><i class="feather icon-feather-log-in"></i></a>
+                <nav class="main-menu main-menu--1 main-menu--1--2">
+                    <div class="main-menu__inner">
+                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                        <div class="stricky-one-logo">
+                            <div class="logo">
+                                <a href="index-2.html"><img src="images/resources/logo-1.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="main-header--one__middle">
+                            <ul class="main-menu__list">
+                                <li class="dropdown current">
+                                    <a href="index-2.html">Home</a>
+                                    <ul>
+                                        <li><a href="index-2.html">Home One</a></li>
+                                        <li><a href="index-3.html">Home Two</a></li>
+                                        <li class="dropdown">
+                                            <a href="#">Header Styles</a>
+                                            <ul>
+                                                <li><a href="index-2.html">Header One</a></li>
+                                                <li><a href="index-3.html">Header Two</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="services-details.html">Services Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Page</a>
+                                    <ul>
+                                        <li><a href="case.html">Case</a></li>
+                                        <li><a href="case-v2.html">Case Two</a></li>
+                                        <li><a href="case-single.html">Case Single</a></li>
+                                        <li><a href="team.html">Team</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="error.html">Error</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-v2.html">Blog Two</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="main-header--one__right clearfix">
+                    <div class="contact-box">
+                        <div class="icon">
+                            <span class="icon-call-1"></span>
+                        </div>
+                        <div class="text">
+                            <p>More info for call us</p>
+                            <a href="tel:123456789">+017682648101</a>
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+                        <a href="#" class="search search-toggler"><span class="icon-search"></span></a>
+                    </div>
+                </div>
 
             </div>
-
         </div>
-    </nav>
+    </div>
 </header>
+
+
+<div class="stricky-header stricked-menu main-menu">
+    <div class="sticky-header__content">
+
+    </div><!-- /.sticky-header__content -->
+</div><!-- /.stricky-header -->

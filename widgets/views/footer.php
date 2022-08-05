@@ -1,37 +1,117 @@
-<footer class="footer-dark bg-slate-blue">
-    <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
+<footer class="footer-one footer-one--two">
+    <div class="shape1"><img src="images/shapes/footer-shape1.png" alt="" /></div>
+    <div class="shape2"><img src="images/shapes/footer-shape1.png" alt="" /></div>
+    <div class="footer-one__top">
         <div class="container">
             <div class="row">
-                <!-- start footer column -->
-                <div class="col-12 col-lg-12 col-md-5 col-sm-6 order-sm-1 order-lg-0 md-margin-50px-bottom xs-margin-25px-bottom">
-                    <a href="index.html" class="footer-logo margin-20px-bottom d-block"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
-                    <p class="w-80 sm-w-100 margin-20px-bottom"><?=Yii::t('app','service')?></p>
-                    <div class="social-icon-style-12">
-                        <ul class="extra-small-icon light">
-                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="dribbble" href="http://www.dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a class="twitter" href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="instagram" href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
+                <div class="col-xl-12">
+                    <div class="footer-one__top-wrapper">
+                        <div class="row">
+                            <!--Start Footer Widget Column-->
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
+                                <div class="footer-widget__column footer-widget__about">
+                                    <div class="footer-widget__about-logo">
+                                        <a href="index-2.html"><img src="images/resources/footer-logo.png"
+                                                                    alt=""></a>
+                                    </div>
+                                    <p class="footer-widget__about-text1">2864 Dhaka Court</p>
+                                    <p class="footer-widget__about-text2">Poughkeepsie, CA 71601</p>
+
+                                    <div class="footer-widget__about-contact-box">
+                                        <p class="phone"><a href="tel:123456789">(800) 0160-616481 </a></p>
+                                        <p><a href="mailto:needhelp@company.com">needhelp@amozocom</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Footer Widget Column-->
+
+                            <!--Start Footer Widget Column-->
+                            <div class="col-xl-2 col-lg-2 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
+                                <div class="footer-widget__column footer-widget__company">
+                                    <h2 class="footer-widget__title">Company</h2>
+                                    <ul class="footer-widget__company-list">
+                                        <li class="footer-widget__company-list-item"><a
+                                                    href="about.html">About</a></li>
+                                        <li class="footer-widget__company-list-item"><a href="team.html">Meet
+                                                our team</a></li>
+                                        <li class="footer-widget__company-list-item"><a href="case.html">Case
+                                                stories</a></li>
+                                        <li class="footer-widget__company-list-item"><a href="blog.html">Latest
+                                                news</a></li>
+                                        <li class="footer-widget__company-list-item"><a
+                                                    href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--End Footer Widget Column-->
+
+                            <!--Start Footer Widget Column-->
+                            <div class="col-xl-3 col-lg-2 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
+                                <div class="footer-widget__column footer-widget__link">
+                                    <h2 class="footer-widget__title">More Link</h2>
+                                    <ul class="footer-widget__link-list">
+                                        <li class="footer-widget__link-list-item"><a href="faq.html">Faq</a>
+                                        </li>
+                                        <li class="footer-widget__link-list-item"><a href="faq.html">Tearm of
+                                                user</a></li>
+                                        <li class="footer-widget__link-list-item"><a
+                                                    href="faq.html">Disclaimer</a></li>
+                                        <li class="footer-widget__link-list-item"><a href="about.html">Privacy
+                                                Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--End Footer Widget Column-->
+
+
+
+                            <!--Start Footer Widget Column-->
+                            <div class="col-xl-3 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.7s">
+                                <div class="footer-widget__column footer-widget__social-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                    <div class="download-btn-box">
+                                        <h3>Discover our app</h3>
+                                        <div class="download-btn1">
+                                            <figure class="image"><a href="index-2.html"><img
+                                                            src="images/resources/download-btn1.png"
+                                                            alt=""></a></figure>
+                                        </div>
+                                        <div class="download-btn2">
+                                            <figure class="image"><a href="index-2.html"><img
+                                                            src="images/resources/download-btn2.png"
+                                                            alt=""></a></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Footer Widget Column-->
+                        </div>
                     </div>
-                </div>
-                <!-- end footer column -->
-
-
-
-
-        </div>
-    </div>
-    <div class="footer-bottom padding-35px-tb border-top border-color-white-transparent">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 col-md-6 text-start text-sm-center text-md-end last-paragraph-no-margin">
-                    <p><a href="#" target="_blank" class="text-decoration-line-bottom text-white" style="text-decoration: none!important;">&copy; <?=Yii::t('app','powered')?></a></p>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!--Start Footer One Bottom-->
+    <div class="footer-one__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="footer-one__bottom-inner text-center">
+                        <div class="footer-one__bottom-text">
+                            <p>All rights reserved 2021 @BracketWeb</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Footer One Bottom-->
+
+
 </footer>
-<!-- end footer -->
-<!-- start scroll to top -->
