@@ -7,6 +7,8 @@ $this->title = 'Region tour';
 
 <?= \app\widgets\Slider::widget()?>
 <?= \app\widgets\About::widget()?>
+<?= \app\widgets\Services::widget()?>
+
 
 
 
