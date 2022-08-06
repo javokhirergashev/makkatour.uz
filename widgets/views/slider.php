@@ -18,7 +18,7 @@
             <div class="swiper-slide">
                 <div class="shape-three zoominout"></div>
                 <div class="image-layer"
-                     style="background-image: url(images/backgrounds/main-slider-v1-3.jpg);"></div>
+                     style="background-image: url(images/backgrounds/city1.jpg);"></div>
                 <div class="image-layer-overlay"></div>
 
                 <div class="auto-container">
@@ -60,19 +60,19 @@
             <div class="swiper-slide">
                 <div class="shape-three zoominout"></div>
                 <div class="image-layer"
-                     style="background-image: url(images/backgrounds/main-slider-v1-2.jpg);"></div>
+                     style="background-image: url(/images/backgrounds/forest.jpg);"></div>
                 <div class="image-layer-overlay"></div>
 
                 <div class="auto-container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-5 col-md-5">
                             <div class="main-slider-two__img">
-                                <div class="shape-one"><img src="images/shapes/slider-v2-shape1.png"
+                                <div class="shape-one"><img src="/images/shapes/slider-v2-shape1.png"
                                                             alt="" /></div>
                                 <div class="shape-two"><img src="images/shapes/slider-v2-shape2.png"
                                                             alt="" /></div>
                                 <div class="inner">
-                                    <img src="images/resources/slider-v2-overlay-img.png" alt="" />
+                                    <img src="/images/resources/slider-v2-overlay-img.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -102,16 +102,16 @@
             <div class="swiper-slide">
                 <div class="shape-three zoominout"></div>
                 <div class="image-layer"
-                     style="background-image: url(images/backgrounds/main-slider-v1-1.jpg);"></div>
+                     style="background-image: url(images/backgrounds/hotel.jpg);"></div>
                 <div class="image-layer-overlay"></div>
 
                 <div class="auto-container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-5 col-md-5">
                             <div class="main-slider-two__img">
-                                <div class="shape-one"><img src="images/shapes/slider-v2-shape1.png"
+                                <div class="shape-one"><img src="/images/shapes/slider-v2-shape1.png"
                                                             alt="" /></div>
-                                <div class="shape-two"><img src="images/shapes/slider-v2-shape2.png"
+                                <div class="shape-two"><img src="/images/shapes/slider-v2-shape2.png"
                                                             alt="" /></div>
                                 <div class="inner">
                                     <img src="images/resources/slider-v2-overlay-img.png" alt="" />
