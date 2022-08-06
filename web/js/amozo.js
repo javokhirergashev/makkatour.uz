@@ -1,6 +1,11 @@
 (function ($) {
   "use strict";
 
+    let clickc = document.querySelector('.clickk');
+    let list = document.querySelector(".listt");
+    clickc.addEventListener("click",()=>{
+        list.classList.toggle('newlist');
+    });
 
 
 

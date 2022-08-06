@@ -1,34 +1,150 @@
+<style>
+
+    .target_blank{
+        width: 100%;
+        height: 100%;
+        padding-top: 3rem;
+        padding-bottom: 20px;
+        background-color: #f3f3f3;
+    }
+
+    .target_blank img{
+        width: 500px;
+        padding-top: 40px;
+        margin: 0 auto 2rem auto;
+        display: block;
+    }
+
+    .target_blank h1{
+        text-align: center;
+        color: #222;
+    }
+
+    .target_blank p{
+        color: #222;
+        text-align: center;
+    }
 
 
-<section class="pt-0  ">
+
+    .service-area-two .single-service a {
+        background: transparent;
+        border: 2px solid #f7ea00;
+        color: #010101;
+        font-weight: 600;
+        float: left;
+    }
+
+    .service-area-four .single-service a {
+        background: transparent;
+        border: 1px solid #F24848;
+        position: relative;
+        z-index: 5;
+    }
+
+    .service-area-five .single-service a {
+        border-color: #f7ea00;
+    }
+
+    .service-area-four .single-service a:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #F24848;
+        z-index: -1;
+        transition: all .4s ease;
+    }
+
+    .service-area-five .single-service a:before {
+        background: #f7ea00;
+    }
+
+    .service-area-four .single-service a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: #F24848;
+        z-index: -1;
+        transition: all .4s ease;
+    }
+
+    .service-area-five .single-service a:after {
+        background: #f7ea00;
+    }
+
+    .service-area-four .single-service a:hover:before,
+    .service-area-five .single-service a:hover:before,
+    .service-area-four .single-service a:hover:after,
+    .service-area-five .single-service a:hover:after {
+        width: 50%;
+    }
+
+    .service-area-four .single-service a:hover {
+        color: #222;
+    }
+
+    .service-area-five .single-service a:hover {
+        color: #010101;
+    }
+
+    .container .btn1{
+        width: 120px;
+        margin: 0 40%;
+    }
+
+    .container .sell{
+        width: 220px;
+        color: #222;
+        background-color: white;
+        /*margin: 0 auto;*/
+        padding: 4px 10px;
+        border: none;
+        border: 1px solid #222;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.5s ease;
+    }
+
+    .container .sell a{
+        text-decoration: none;
+    }
+
+    .container .sell:hover{
+        background-color: #222;
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+
+    .container .sell i{
+        transition: all 0.5s ease;
+    }
+
+    .container .sell:hover i{
+        transform: translateX(5px);
+        transition: all 0.5s ease;
+    }
+
+
+
+</style>
+
+<section class="target_blank">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <img src="<?=$image?>" >
-            </div>
-            <div class="col-6">
-                <ul>
-                    <li style="list-style: none"><h2><?=$model['title_'.Yii::$app->language];?></h2></li>
-                    <li style="list-style: none"><h3><?=$model->period?></h3></li>
-                    <li style="list-style: none"><h6><?=$model->price?></h6></li>
 
-                </ul>
-            </div>
+        <img src="<?=$image?>" alt="">
 
+        <h1><?= $model->title_uz ?></h1>
+        <p><?=$model->description_uz?></p>
+        <p><?=$model->body_uz?></p>
+        <div class="btn1">
+
+            <a href="https://payme.uz/fallback/merchant/?id=62a846ae2abe8594b27f3744" class="btnn"><button class="sell">online to'lov qilish <i class="fas fa-angle-right"></i></button></a>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <div class="row">
-                    <div class="col-12 margin-9-rem-top sm-margin-50px-top last-paragraph-no-margin wow animate__fadeIn">
-                        <h6 class="alt-font text-extra-dark-gray font-weight-500 margin-20px-bottom"><?=Yii::t('app','packages_info')?></h6>
-                        <p><?=$model['body_'.Yii::$app->language];?></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <a href="https://payme.uz/fallback/merchant/?id=6287308844589c0316db4a42" class="btn btn-small btn-gradient-sky-blue-pink  d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr"><?=Yii::t('app','buy_button')?><span class="bg-dark-slate-blue"></span></a>
     </div>
 </section>
-<!-- end section -->
-

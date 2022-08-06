@@ -145,9 +145,6 @@
 </section>
 <!--Main Slider End-->
 
-<<<<<<< HEAD
-=======
-
 <!--Start Company Logos Two-->
 <section class="company-logos-one company-logos-one--two">
     <div class="container">
@@ -196,4 +193,3 @@
     </div>
 </section>
 <!--End Company Logos Two-->
->>>>>>> origin/master

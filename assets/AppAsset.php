@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        "https://unicons.iconscout.com/release/v4.0.0/css/line.css",
         "images/favicons/apple-touch-icon.png",
         "images/favicons/favicon-32x32.png",
         "images/favicons/favicon-16x16.png",

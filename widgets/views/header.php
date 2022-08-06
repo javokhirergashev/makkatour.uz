@@ -5,7 +5,7 @@
 
                 <div class="main-header--one__left">
                     <div class="logo">
-                        <a href="index-2.html"><img src="images/resources/logo-2.png" alt="" /></a>
+                        <a href="index-2.html"><img src="/images/resources/logo-2.png" alt="" /></a>
                     </div>
                 </div>
 
@@ -14,7 +14,7 @@
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                         <div class="stricky-one-logo">
                             <div class="logo">
-                                <a href="index-2.html"><img src="images/resources/logo-1.png" alt=""></a>
+                                <a href="index-2.html"><img src="/images/resources/logo-1.png" alt=""></a>
                             </div>
                         </div>
 
@@ -29,6 +29,20 @@
                                     <?php endif;?>
 
                                 </li>
+                                <li><a href="<?=\yii\helpers\Url::to(['admin/'])?>"><i style="font-size: 20px" class="uil uil-sign-out-alt"></i></a></li>
+
+                                <div class="containerr-1">
+                                    <button class="clickk"><i class="uil uil-globe" ></i><i class="uil uil-angle-down" id="down"></i></button>
+                                    <div class="listt">
+                                        <?php
+                                        foreach (Yii::$app->params['language'] as $key => $value){echo
+                                            "<li id='linka'>
+                                                <a href='".\yii\helpers\Url::to(['site/ozgar',"til"=>$key])."' id='ahref'><img src='' alt=''><p class='imageValue'>".$value."</p></a>
+                                             </li>";
+                                        }?>
+                                    </div>
+                                </div>
+
 
                             </ul>
                         </div>

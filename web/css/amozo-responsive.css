@@ -16,8 +16,11 @@
 @media only screen and (min-width: 1200px) and (max-width: 1565px) {
 
     .main-header--one__middle {
-        padding-left: 60px;
+        padding-left: 20px;
+        /*margin-left: 4rem;*/
     }
+
+
 
     .main-header--one__right .contact-box {
         display: none;
