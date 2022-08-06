@@ -31,9 +31,9 @@
                                     <h2 class="footer-widget__title">Company</h2>
                                     <ul class="footer-widget__company-list">
                                         <li class="footer-widget__company-list-item">
-                                            <?php if (!empty($menular)):?>
-                                                <?php foreach ($menular as $menu):?>
-                                                    <a href="<?=$menu->link?>"><?=$menu["name_".Yii::$app->language];?></a>
+                                            <?php if (!empty($models)):?>
+                                                <?php foreach ($models as $model):?>
+                                                    <a href="<?=$model->link?>"><?=$model["name_".Yii::$app->language];?></a>
                                                 <?php endforeach;?>
                                             <?php endif;?>
                                         </li>

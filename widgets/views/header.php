@@ -22,9 +22,9 @@
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
 
-                                    <?php if (!empty($menular)):?>
-                                        <?php foreach ($menular as $menu):?>
-                                            <a href="<?=$menu->link?>"><?=$menu["name_".Yii::$app->language];?></a>
+                                    <?php if (!empty($models)):?>
+                                        <?php foreach ($models as $model):?>
+                                            <a href="<?=$model->link?>"><?=$model["name_".Yii::$app->language];?></a>
                                         <?php endforeach;?>
                                     <?php endif;?>
 <!--                                    <a href="index-2.html">Home</a>-->
