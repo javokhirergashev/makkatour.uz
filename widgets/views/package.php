@@ -14,13 +14,13 @@
             <?php if(!empty($models)):?>
             <?php foreach ($models as $model):?>
             <?php
-            $packimg = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
+                $packimg = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
             ?>
             <!--Start Single Blog One-->
             <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
                 <div class="blog-one__single">
                     <div class="blog-one__single-img">
-                        <img src="<?=$packing?>" alt="" />
+                        <img src="<?=$packimg?>" alt="" />
                         <div class="overlay-icon">
                             <a href="blog-single.html"><span class="fa fa-plus"></span></a>
                         </div>
@@ -36,7 +36,7 @@
                             <li><?=$model->price?></li>
                         </ul>
                         <div class="blog-one--two__btn">
-                            <a href="<?=\yii\helpers\Url::to(["tours/view", "id"=>$model->id])?>">Continue Reading <span class="icon-right-1"></span></a>
+                            <a href="<?=\yii\helpers\Url::to(["toursview/view", "id"=>$model->id])?>">Continue Reading <span class="icon-right-1"></span></a>
                         </div>
                     </div>
                 </div>

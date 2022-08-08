@@ -2,7 +2,7 @@
 
 /** @var yii\web\View $this */
 
-$this->title = 'Region tour';
+$this->title = 'Makka tour';
 ?>
 
 <?= \app\widgets\Slider::widget()?>
