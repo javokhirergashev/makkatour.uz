@@ -30,7 +30,7 @@
                                 <div class="shape-two"><img src="images/shapes/slider-v2-shape2.png"
                                                             alt="" /></div>
                                 <div class="inner">
-                                    <img src="images/resources/slider-v2-overlay-img.png" alt="" />
+                                    <img src="images/resources/Vector.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                                         <span class="icon-play-button-1"></span>
                                     </a>
                                 </div>
-                                <h2>Creative <span>Digital</span> <br> Marketing <br>Solution</h2>
+                                <h2><?=Yii::t("app", "text1")?> <span><?=Yii::t("app", "text2")?></span> <br><?=Yii::t("app", "text3")?><br><?=Yii::t("app", "text4")?></h2>
 
                                 <div class="main-slider-two__btn">
                                     <a href="contact.html" class="thm-btn">Get Solution</a>
@@ -72,7 +72,7 @@
                                 <div class="shape-two"><img src="images/shapes/slider-v2-shape2.png"
                                                             alt="" /></div>
                                 <div class="inner">
-                                    <img src="/images/resources/slider-v2-overlay-img.png" alt="" />
+                                    <img src="/images/resources/Vector.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                                         <span class="icon-play-button-1"></span>
                                     </a>
                                 </div>
-                                <h2>Creative <span>Digital</span> <br> Marketing <br>Solution</h2>
+                                <h2><span><?=Yii::t("app", "With")?></span> <br> <?=Yii::t("app", "mazmunli")?> <br><?=Yii::t("app", "trip")?></h2>
 
                                 <div class="main-slider-two__btn">
                                     <a href="contact.html" class="thm-btn">Get Solution</a>
@@ -114,7 +114,7 @@
                                 <div class="shape-two"><img src="/images/shapes/slider-v2-shape2.png"
                                                             alt="" /></div>
                                 <div class="inner">
-                                    <img src="images/resources/slider-v2-overlay-img.png" alt="" />
+                                    <img src="images/resources/Vector.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -127,10 +127,10 @@
                                         <span class="icon-play-button-1"></span>
                                     </a>
                                 </div>
-                                <h2>Creative <span>Digital</span> <br> Marketing <br>Solution</h2>
+                                <h2><?=Yii::t("app", "hoteltext1")?><br> <span><?=Yii::t("app", "hoteltext2")?></span> <br><?=Yii::t("app", "hoteltext3")?></h2>
 
                                 <div class="main-slider-two__btn">
-                                    <a href="contact.html" class="thm-btn">Get Solution</a>
+                                    <a href="contact.html" class="thm-btn"><?=Yii::t("app", "boglanish")?></a>
                                 </div>
                             </div>
                         </div>
@@ -149,8 +149,8 @@
 <section class="company-logos-one company-logos-one--two">
     <div class="container">
         <div class="title text-center">
-            <h5>Join the <span class="odometer" data-count="1000">00</span><span class="plus">+</span> Company
-                Trusting amozo </h5>
+            <h5><?=Yii::t("app", "partner1")?> <span class="odometer" data-count="100">00</span><span class="plus">+</span>
+                <?=Yii::t("app", "partner2")?></h5>
         </div>
         <div class="row">
             <div class="col-xl-12">
