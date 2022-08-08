@@ -26,44 +26,12 @@
                     <div class="case-studies-two__single-content">
                         <p><?=$model["name_".Yii::$app->language];?></p>
                         <h2><a href="case-single.html">Case Study colsulting Business Strategies</a></h2>
+                        <a href="<?=\yii\helpers\Url::to(["tours/view", "id"=>$model->id])?>">More</a>
                     </div>
                 </div>
             </div>
-            <!--End Single Case Studies Two-->
-
-            <!--Start Single Case Studies Two-->
-<!--            <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.3s">-->
-<!--                <div class="case-studies-two__single">-->
-<!--                    <div class="shape1"><img src="/images/shapes/case-studies-v2-shape1.png" alt="" />-->
-<!--                    </div>-->
-<!--                    <div class="case-studies-two__single-img">-->
-<!--                        <img src="/images/cases/case-v2-img2.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                    <div class="case-studies-two__single-content">-->
-<!--                        <p>Creative Design</p>-->
-<!--                        <h2><a href="case-single.html">Strategy & Creative Art Direction.</a></h2>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <!--End Single Case Studies Two-->
-
-            <!--Start Single Case Studies Two-->
-<!--            <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.6s">-->
-<!--                <div class="case-studies-two__single">-->
-<!--                    <div class="shape1"><img src="/images/shapes/case-studies-v2-shape1.png" alt="" />-->
-<!--                    </div>-->
-<!--                    <div class="case-studies-two__single-img">-->
-<!--                        <img src="/images/cases/case-v2-img3.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                    <div class="case-studies-two__single-content">-->
-<!--                        <p>Marketing Strategy</p>-->
-<!--                        <h2><a href="case-single.html">A1 Digital Marketing Strategy</a></h2>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
                 <?php endforeach;?>
             <?php endif;?>
-            <!--End Single Case Studies Two-->
         </div>
 
         <div class="case-studies-two__bottom">
