@@ -7,8 +7,8 @@
     <div class="shape5 zoominout"></div>
     <div class="container">
         <div class="sec-title text-center">
-            <span class="sec-title__tagline">Our Blog update</span>
-            <h2 class="sec-title__title">Recent Articles Daily Updated </h2>
+            <span class="sec-title__tagline"><?=Yii::t("app", "ourpack")?></span>
+            <h2 class="sec-title__title"><?=Yii::t("app", "packinfo")?></h2>
         </div>
         <div class="row">
             <?php if(!empty($models)):?>

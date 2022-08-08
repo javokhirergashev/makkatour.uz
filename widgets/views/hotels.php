@@ -2,8 +2,8 @@
 <section class="team-one">
     <div class="container">
         <div class="sec-title text-center">
-            <span class="sec-title__tagline">The Team</span>
-            <h2 class="sec-title__title">Active Suport Team</h2>
+            <span class="sec-title__tagline"><?=Yii::t("app", "hotelh1")?></span>
+            <h2 class="sec-title__title"><?=Yii::t("app", "hotelspan")?></h2>
         </div>
         <div class="row">
             <?php if (!empty($models)):?>

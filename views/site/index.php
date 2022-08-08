@@ -13,6 +13,7 @@ $this->title = 'Makka tour';
 <?= \app\widgets\Package::widget()?>
 <?= \app\widgets\Hotels::widget()?>
 <?= \app\widgets\WhyUs::widget()?>
+<?= \app\widgets\Contact::widget()?>
 
 
 

@@ -5,8 +5,8 @@
     <div class="shape4 float-bob-y"><img src="/images/shapes/case-studies-v2-shape4.png" alt="" /></div>
     <div class="container">
         <div class="sec-title text-center">
-            <span class="sec-title__tagline">Our Case Studies</span>
-            <h2 class="sec-title__title">Our Most Recent Digital And <br>Strategy Projects.</h2>
+            <span class="sec-title__tagline"><?=Yii::t("app", "desinfo1")?></span>
+            <h2 class="sec-title__title"><?=Yii::t("app", "desinfo2")?></h2>
         </div>
         <div class="row">
             <?php if (!empty($models)):?>
@@ -26,7 +26,7 @@
                     <div class="case-studies-two__single-content">
                         <p><?=$model["name_".Yii::$app->language];?></p>
                         <h2><a href="case-single.html">Case Study colsulting Business Strategies</a></h2>
-                        <a href="<?=\yii\helpers\Url::to(["tours/view", "id"=>$model->id])?>">More</a>
+                        <a href="<?=\yii\helpers\Url::to(["tours/view", "id"=>$model->id])?>"><?=Yii::t("app", "links")?></a>
                     </div>
                 </div>
             </div>
@@ -34,25 +34,25 @@
             <?php endif;?>
         </div>
 
-        <div class="case-studies-two__bottom">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="case-studies-two__bottom-inner">
-                        <div class="case-studies-two__bottom-img wow slideInLeft" data-wow-delay="100ms"
-                             data-wow-duration="2500ms">
-                            <img src="/images/cases/case-v2-bottom-img.png" alt="" />
-                        </div>
-                        <div class="case-studies-two__bottom-title">
-                            <h2>Giving your business some original ideas and grow your business with our team
-                            </h2>
-                        </div>
-                        <div class="case-studies-two__bottom-btn">
-                            <a href="services.html" class="thm-btn">More Services</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="case-studies-two__bottom">-->
+<!--            <div class="row">-->
+<!--                <div class="col-xl-12">-->
+<!--                    <div class="case-studies-two__bottom-inner">-->
+<!--                        <div class="case-studies-two__bottom-img wow slideInLeft" data-wow-delay="100ms"-->
+<!--                             data-wow-duration="2500ms">-->
+<!--                            <img src="/images/cases/case-v2-bottom-img.png" alt="" />-->
+<!--                        </div>-->
+<!--                        <div class="case-studies-two__bottom-title">-->
+<!--                            <h2>Giving your business some original ideas and grow your business with our team-->
+<!--                            </h2>-->
+<!--                        </div>-->
+<!--                        <div class="case-studies-two__bottom-btn">-->
+<!--                            <a href="services.html" class="thm-btn">More Services</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 <!--End Case Studies Two-->

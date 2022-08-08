@@ -22,7 +22,7 @@ class CategoryController extends GeneralController
         $categories = ToursCategory::find()->where(['status' => 1,])->all();
 //        debug($models);
         if (empty($models)) {
-            $this->redirect('/web/error/view');
+            $this->redirect('/error/view');
         } else
 //            $image = StaticFunctions::getImage('tours',$model->id,$model->images);
             return $this->render('view', compact('models','categories'));

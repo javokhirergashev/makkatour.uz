@@ -9,6 +9,33 @@
 
 
 
+    document.getElementById("submit").onclick = function (){
+        var userName = document.getElementById("input_name").value;
+        var userSurname = document.getElementById("input_surname").value;
+        var userTel = document.getElementById("input_tel").value;
+        var userEmail = document.getElementById("input_email").value;
+        var userText = document.getElementById("textarea").value;
+        var userCategory = document.getElementById("select").value;
+        var inputs = document.querySelectorAll
+        var my_text =  `Name is: ${userName} %0A Surname is: ${userSurname} %0A Number is: ${userTel} %0A E-mail is: ${userEmail}  %0A Category is: ${userCategory} %0A Message is: ${userText}`;
+        var token = "5415508785:AAEzOJ1LQg4kCpfxtkyKxQcHiGUUp1GQDTE";
+        var chat_id = -521428374;
+        var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}`;
+        // var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${userText}`;
+
+
+
+        let api = new XMLHttpRequest();
+        api.open("GET", url, true);
+        api.send();
+        alert("Buyurtmangiz qabul qilindi, tez orada mutahasislarimiz siz bilan bog'lanishadi!");
+    };
+
+
+
+
+
+
   //===Language switcher===
 
   if ($("#polyglot-language-options").length) {
@@ -1094,15 +1121,14 @@ function projectMasonaryLayout() {
     };
 
 
-    
-
-
-
-
-
-
 
 })(jQuery);
+
+
+
+
+
+
 
 
 

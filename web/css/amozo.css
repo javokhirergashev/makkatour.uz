@@ -337,7 +337,7 @@ button {
     position: relative;
     display: inline-block;
     color: var(--thm-base);
-    font-size: 16px;
+    font-size: 23px;
     line-height: 26px;
     font-weight: 600;
     margin-bottom: 19px;
@@ -5050,9 +5050,13 @@ button {
 .services-two__single-icon {
     position: relative;
     display: inline-block;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
     transition: all 200ms linear;
     transition-delay: 0.1s;
+}
+
+.services-two__single-icon i{
+    font-size: 4rem;
 }
 
 .services-two__single:hover .services-two__single-icon {
@@ -5063,7 +5067,7 @@ button {
 .services-two__single-title {
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .services-two__single-title a {
@@ -6150,9 +6154,9 @@ button {
 
 .about-two__content-text1 {
     color: var(--thm-black);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .about-two__content-list {
@@ -7355,10 +7359,12 @@ button {
 =============================================
 ***/
 .contact-page {
+    width: 100%;
+    height: 150vh;
     position: relative;
     display: block;
     background: #fff8f1;
-    padding: 130px 0px 0px;
+    padding: 90px 0px 0px;
     z-index: 2;
 }
 
@@ -7389,22 +7395,37 @@ button {
     background: #ffffff;
     box-shadow: 0px 25px 25px 0px rgba(212, 207, 207, 0.25);
     padding: 33px 50px 85px;
-    margin-bottom: -140px;
+    /*margin-bottom: -140px;*/
 }
 
 .contact-page__wrapper .comment-form__input-box input[type="text"],
+.contact-page__wrapper .comment-form__input-box input[type="number"],
+.contact-page__wrapper .comment-form__input-box input[type="datetime-local"],
 .contact-page__wrapper .comment-form__input-box input[type="email"] {
-    height: 55px;
+    height: 35px;
     width: 100%;
     font-size: 18px;
     color: rgba(var(--thm-color-1-rgb), 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #777777;
+    margin-bottom: 62px;
+}
+
+.contact-page__wrapper .comment-form__input-box select{
+    height: 35px;
+    width: 100%;
+    font-size: 18px;
+    color: rgba(var(--thm-color-1-rgb), 0.7);
+    border: none;
+    outline: none;
     border-bottom: 2px solid #777777;
     margin-bottom: 62px;
 }
 
 .contact-page__wrapper .comment-form__input-box textarea {
     font-size: 18px;
-    height: 200px;
+    height: 80px;
     color: rgba(var(--thm-color-1-rgb), 0.8);
     border-bottom: 2px solid #777777;
     padding: 8px 0px 30px;

@@ -58,13 +58,13 @@
             <?php if(!empty($models)):?>
                 <?php foreach ($models as $model):?>
                     <?php
-                    $packimg = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
+                    $image = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
                     ?>
                     <!--Start Single Blog One-->
                     <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
                         <div class="blog-one__single">
                             <div class="blog-one__single-img">
-                                <img src="<?=$packimg?>" alt="" />
+                                <img src="<?=$image?>" alt="" />
                                 <div class="overlay-icon">
                                     <a href="blog-single.html"><span class="fa fa-plus"></span></a>
                                 </div>
