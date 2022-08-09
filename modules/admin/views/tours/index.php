@@ -83,8 +83,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         $controller = Yii::$app->controller->id;
                         $code = <<<BUTTONS
                                 <div class="btn-group flex-center">
-                                    <a href="/web/admin/{$controller}/update?id={$model->id}" class="btn btn-light"><i class="far fa-edit"></i></a>
-                                    <a href="/web/admin/{$controller}/delete?id={$model->id}" id="{$controller}{$model->id}" data-postID="{$model->id}" data-postType="{$controller}" class="btn btn-danger postRemove"><i class="far fa-trash-alt"></i></a>
+                                    <a href="/admin/{$controller}/update?id={$model->id}" class="btn btn-light"><i class="far fa-edit"></i></a>
+                                    <a href="/admin/{$controller}/delete?id={$model->id}" id="{$controller}{$model->id}" data-postID="{$model->id}" data-postType="{$controller}" class="btn btn-danger postRemove"><i class="far fa-trash-alt"></i></a>
                                 </div>
 BUTTONS;
                         return $code;

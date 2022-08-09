@@ -48,6 +48,9 @@
                                 <div class="main-slider-two__btn">
                                     <a href="contact.html" class="thm-btn">Get Solution</a>
                                 </div>
+                                <div class="main-slider-two__btn">
+                                    <a href="<?= \yii\helpers\Url::to(['/web/test/view'])?>">test</a>
+                                </div>
                             </div>
                         </div>
                     </div>

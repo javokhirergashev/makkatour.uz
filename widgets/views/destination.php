@@ -26,7 +26,7 @@
                     <div class="case-studies-two__single-content">
                         <p><?=$model["name_".Yii::$app->language];?></p>
                         <h2><a href="case-single.html">Case Study colsulting Business Strategies</a></h2>
-                        <a href="<?=\yii\helpers\Url::to(["tours/view", "id"=>$model->id])?>"><?=Yii::t("app", "links")?></a>
+                        <a href="<?=\yii\helpers\Url::to(["/tours/view", "id"=>$model->id])?>"><?=Yii::t("app", "links")?></a>
                     </div>
                 </div>
             </div>

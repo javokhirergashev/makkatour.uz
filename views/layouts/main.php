@@ -25,9 +25,9 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
-        <div class="preloader">
-            <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
-        </div>
+<!--        <div class="preloader">-->
+<!--            <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />-->
+<!--        </div>-->
 
 
     <div class="page-wrapper">

@@ -8,14 +8,18 @@
     <div class="container">
         <div class="sec-title text-center">
             <span class="sec-title__tagline">Our Blog update</span>
-            <h2 class="sec-title__title">Recent Articles Daily Updated </h2>
+            <?php if(!empty($categories)):?>
+             <?php foreach ($categories as $category):?>
+                    <h2 class="sec-title__title"><?=$category["name_".Yii::$app->language]?> </h2>
+                <?php endforeach;?>
+            <?php endif;?>
         </div>
         <div class="row">
             <?php if(!empty($models)):?>
                 <?php foreach ($models as $model):?>
-<!--                    --><?php
-//                    $packimg = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
-//                    ?>
+                  <?php
+                  $image = \app\models\StaticFunctions::getImage("tours", $model->id, $model->images)
+                   ?>
                     <!--Start Single Blog One-->
                     <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.1s">
                         <div class="blog-one__single">
